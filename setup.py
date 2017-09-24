@@ -4,7 +4,7 @@ import shutil
 
 setup(
     name='mc-tools',
-    version='0.0.2',
+    version='0.0.3',
     author='Max Lobur',
     author_email='max_lobur@outlook.com',
     classifiers=[
