@@ -13,5 +13,10 @@ brew install python
 ```
 3. Install mc-tools
 ```bash
-pip2 install --upgrade --no-cache --user mc-tools
+pip2 install --upgrade --no-cache mc-tools
+```
+4. Fill-up the config
+```bash
+mv /tmp/mua-config.yml.sample ~/mua-config.yml
+open ~/mua-config.yml
 ```

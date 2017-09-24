@@ -1,7 +1,7 @@
 language: python
 install:
   - python setup.py install
-  - mv ~/mua-config.yml{.sample,}
+  - mv /tmp/mua-config.yml.sample ~/mua-config.yml
 script:
   - tests/smoke.sh
 deploy:
