@@ -1,4 +1,7 @@
 deploy:
   provider: pypi
-  user: "max_lobur"
-  password: ""
+  user: max_lobur
+  password:
+    secure: Ho4UHUSt2b3K6+Xkvd2KNW8OpWKjloFRNxMuM9oF3EY20JoO2xLPlrn/2tEQN1J/impp04gHEUagE+uar7ppDSKgLVLaPctL1UDx9HYxkuNHBbvJL5M4ZcmLdapCbRf3s/CSLgFY7mBPIyC5TvzsipFdb2Z+pBQTB7Krl7F8tMJ1v87lh5smCdodNcB+/mjOc/C1s2BpKnb7IHn5PxRw1sxSRhryLc37e1DRXVEyUj2iOCyITAyXeggh48Dh5zHzHcDYla0M+Gs+9ofcIXRhmYY2zzdbW7rN7G30BIH+pVkwhjGs60j4bY2RJsOhuWH5yo37cLLXNuHeofG8XX5tAINiG53yaJvOIwQoiq/dGGU8AikoNx4lVc2Y7gfwpXLHzbKNWkH+MdILLL7qDrmWVAxBUqIxePIdxA7RRwAn/2jjYsmr6MooAIxNnjVtlVXlwFFbwMJ/zHBvod0VT48+WmBBXJw1ig2k/KKQbZ1oNQEMvUzffSv3Q74rCLXadyNTioQGfixYBCLslLVtcRNSzVXFy5FpGREJ+Khdsl2j4EWL4PathsoBCNdtqyOctfvi4kk6NGW/zrNZKZe98c6AUM31879BE8qZQvKGesUYK6SoWqtABQWeo/5McEU33Amfyj5S8WmSl2TfxngvF9EmcOtpt58BhsYCh8YVsN/vvDY=
+  on:
+    tags: true
