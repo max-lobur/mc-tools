@@ -1,4 +1,9 @@
 language: python
+install:
+  - python setup.py install
+  - mv ~/mua-config.yml{.sample,}
+script:
+  - tests/smoke.sh
 deploy:
   provider: pypi
   user: max_lobur
