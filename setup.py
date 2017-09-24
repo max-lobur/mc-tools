@@ -2,19 +2,22 @@ from setuptools import setup, find_packages
 import os
 import shutil
 
-with open('requirements.txt') as f:
-    required = f.read().splitlines()
-
 setup(
     name='mc-tools',
-    version='0.0.1',
+    version='0.0.2',
     author='Max Lobur',
     author_email='max_lobur@outlook.com',
     classifiers=[
         'Programming Language :: Python :: 2.7',
     ],
-    install_requires=required,
+    install_requires=[
+        "pyyaml",
+        "futures",
+        "click",
+        "YaDiskClient",
+    ],
     packages=find_packages(),
+    data_files=[('config', ['mua-config.yml.sample'])],
     entry_points={
         'console_scripts': [
             'mua=mc_tools.cli:cli',
