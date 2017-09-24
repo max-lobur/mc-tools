@@ -4,7 +4,7 @@ import shutil
 
 setup(
     name='mc-tools',
-    version='0.0.6',
+    version='0.0.7',
     author='Max Lobur',
     author_email='max_lobur@outlook.com',
     classifiers=[
@@ -26,4 +26,4 @@ setup(
 )
 
 conf_sample = os.path.join(os.path.dirname(__name__), "mua-config.yml.sample")
-shutil.copy(conf_sample, os.path.expanduser("~/"))
+shutil.copy(conf_sample, os.environ.get("HOME", "/tmp/"))

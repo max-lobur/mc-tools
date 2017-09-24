@@ -13,5 +13,5 @@ brew install python
 ```
 3. Install mc-tools
 ```bash
-pip2 install --upgrade --no-cache --user mc-tools
+pip2 install --upgrade --no-cache mc-tools
 ```
