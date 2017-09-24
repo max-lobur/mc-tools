@@ -1,4 +1,0 @@
-pyyaml
-futures
-click
-YaDiskClient
