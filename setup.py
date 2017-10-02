@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name='mc-tools',
-    version='0.0.10',
+    version='0.0.11',
     author='Max Lobur',
     author_email='max_lobur@outlook.com',
     classifiers=[
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
     ],
     install_requires=[
         "pyyaml",

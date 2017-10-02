@@ -1,4 +1,3 @@
-#!/usr/bin/env python2
 import click
 
 
@@ -7,4 +6,4 @@ def cli():
     pass
 
 # Init subcommands
-import ya_disk_publish.publish
+import mc_tools.ya_disk_publish.publish

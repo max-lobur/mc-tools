@@ -1,4 +1,6 @@
 language: python
+python:
+  - "3.6"
 install:
   - python setup.py install
   - mv /tmp/mua-config.yml.sample ~/mua-config.yml

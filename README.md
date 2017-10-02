@@ -9,11 +9,11 @@ brew update; brew upgrade; brew cleanup;
 ```
 2. Install python
 ```bash
-brew install python
+brew install python3
 ```
 3. Install mc-tools
 ```bash
-pip2 install --upgrade --no-cache mc-tools
+pip3 install --upgrade --no-cache mc-tools
 ```
 4. Fill-up the config
 ```bash

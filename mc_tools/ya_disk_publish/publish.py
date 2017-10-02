@@ -1,5 +1,3 @@
-# encoding: utf-8
-import sys
 import csv
 import os
 import click
@@ -7,7 +5,7 @@ from YaDiskClient.YaDiskClient import YaDisk
 from concurrent.futures import ThreadPoolExecutor, wait
 
 from mc_tools.cli import cli
-from mc_tools.config import conf
+from mc_tools.config.config import conf
 
 
 class CertPublisher:
@@ -54,7 +52,7 @@ class CertPublisher:
         # Write out
         out_path = os.path.join(
             os.path.dirname(self.src_file_csv),
-            os.path.basename(self.src_file_csv) + "_done.csv"
+            os.path.basename(self.src_file_csv).split(".")[0] + "_done.csv"
         )
         with open(out_path, "w") as out:
             writer = csv.writer(out, delimiter=',')
