@@ -3,6 +3,7 @@ import os
 import click
 from YaDiskClient.YaDiskClient import YaDisk
 from concurrent.futures import ThreadPoolExecutor, wait
+from time import sleep
 
 from mc_tools.cli import cli
 from mc_tools.config.config import conf
@@ -20,12 +21,16 @@ class CertPublisher:
         }
 
     def share_cert_for(self, name):
-        try:
-            cert = self.certs[name]
-            return self.ya.publish_doc(cert)
-        except Exception as e:
-            click.echo(repr(e))
-            return "###"
+        retries = 0
+        while retries <= 5:
+            retries += 1
+            try:
+                cert = self.certs[name]
+                return self.ya.publish_doc(cert)
+            except Exception as e:
+                click.echo(repr(e))
+                sleep(1)
+        return "###"
 
     def process_one(self, client, clients_processed):
         name, mail = client[:2]
