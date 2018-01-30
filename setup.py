@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='mc-tools',
-    version='0.0.15',
+    version='0.0.16',
     author='Max Lobur',
     author_email='max_lobur@outlook.com',
     classifiers=[
