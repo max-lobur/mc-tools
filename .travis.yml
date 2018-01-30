@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.6"
+  - '3.6'
 install:
   - python setup.py install
   - mv /tmp/mua-config.yml.sample ~/mua-config.yml
@@ -10,6 +10,6 @@ deploy:
   provider: pypi
   user: max_lobur
   password:
-    secure: Ho4UHUSt2b3K6+Xkvd2KNW8OpWKjloFRNxMuM9oF3EY20JoO2xLPlrn/2tEQN1J/impp04gHEUagE+uar7ppDSKgLVLaPctL1UDx9HYxkuNHBbvJL5M4ZcmLdapCbRf3s/CSLgFY7mBPIyC5TvzsipFdb2Z+pBQTB7Krl7F8tMJ1v87lh5smCdodNcB+/mjOc/C1s2BpKnb7IHn5PxRw1sxSRhryLc37e1DRXVEyUj2iOCyITAyXeggh48Dh5zHzHcDYla0M+Gs+9ofcIXRhmYY2zzdbW7rN7G30BIH+pVkwhjGs60j4bY2RJsOhuWH5yo37cLLXNuHeofG8XX5tAINiG53yaJvOIwQoiq/dGGU8AikoNx4lVc2Y7gfwpXLHzbKNWkH+MdILLL7qDrmWVAxBUqIxePIdxA7RRwAn/2jjYsmr6MooAIxNnjVtlVXlwFFbwMJ/zHBvod0VT48+WmBBXJw1ig2k/KKQbZ1oNQEMvUzffSv3Q74rCLXadyNTioQGfixYBCLslLVtcRNSzVXFy5FpGREJ+Khdsl2j4EWL4PathsoBCNdtqyOctfvi4kk6NGW/zrNZKZe98c6AUM31879BE8qZQvKGesUYK6SoWqtABQWeo/5McEU33Amfyj5S8WmSl2TfxngvF9EmcOtpt58BhsYCh8YVsN/vvDY=
+    secure: HP7MC78bQ6ceJYHXGqyFfr+ogPVNmvirb4nFhKRrJ6bKm7/UXfhNmcL1FpeEnq43QbrxTOkO9pe1LZxNHoPOJqHj4iBqspbrdBDz5IoqudtnfVmjYJ1JNstskymaOouBtyCb+zyviGTbqaafnWP+a+n5oZZ+5TTgdlMzOUMkrwicDkxCVx6rQ32T5/ZPbKolc6E07+39Sc2spEukTuLxxxYH1B+/w8fBcIfgp7RpntcCFMleSQiFdRHNhrD74ge6j0Iz27eF1ESO7CLhv4aT9DvYbv4RUfxpNO+5xk3/bZGlwFEYLRmRth8Kf43e3sSeLy+QBsYyR2sdCSLhr73aTXH8A1vu2t5k06S+lEIq3kLcV0T082Ag0vKxfDGeoftIQt6tq/Ld18Jo3zEcLeduWMLEfGr75VGGJXJvSaJK2zsVjCvov1491wnA7YDtxSuLp+T9a16i29x0jHjTK48zOBaD5/bfkQgru8WBtYCikep4SbJMDQ2khfHCFG3VVihf4M443kzxL3bDZmlVgZpSyKW+7UYFxSHTAh01qzbt/9+gclcJdGjPaIN+xqliybBmusVRPQGwF0Ib7W1syu2NVbkiQwBwzhkQVzX08O7QWAXrvHpQQsGyF7r+9rjCtmJt9wxoSHvgZDHJH6zwwMyFElB5Py1YjJzPhhsMJGm6RoM=
   on:
     tags: true
