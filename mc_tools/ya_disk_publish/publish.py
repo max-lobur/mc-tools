@@ -67,8 +67,9 @@ class CertPublisher:
 
     def _normalize_name(self, name):
         name = name.strip("'")
-        name = name.split()
-        name = " ".join(part for part in name if part)
+        name = name.strip()
+        #name = name.split()
+        #name = " ".join(part for part in name if part)
         return name
 
     def _normalize_mail(self, mail):
