@@ -26,7 +26,7 @@ class CertPublisher:
             retries += 1
             try:
                 cert = self.certs[name]
-                return self.ya.publish_doc(cert)
+                return self.ya.publish(cert)
             except Exception as e:
                 click.echo(repr(e))
                 sleep(1)
@@ -34,8 +34,8 @@ class CertPublisher:
 
     def process_one(self, client, clients_processed):
         name, mail = client[:2]
-        name = name.strip("'")
-        mail = mail.strip("'")
+        name = self._normalize_name(name)
+        mail = self._normalize_mail(mail)
         ref = self.share_cert_for(name)
         res = (name.strip(), mail, ref)
         click.echo(res)
@@ -64,6 +64,17 @@ class CertPublisher:
             for p in clients_processed:
                 writer.writerow(p)
         return out_path
+
+    def _normalize_name(self, name):
+        name = name.strip("'")
+        name = name.split()
+        name = " ".join(part for part in name if part)
+        return name
+
+    def _normalize_mail(self, mail):
+        mail = mail.strip("'")
+        mail = mail.strip()
+        return mail
 
 
 @cli.command()
